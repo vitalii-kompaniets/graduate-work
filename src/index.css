@@ -1,0 +1,210 @@
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Montserrat Alternates",
+    "Courier New", monospace;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #353535;
+}
+
+h2 {
+  font-size: 19px;
+  line-height: 23px;
+}
+
+h3 {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.header-section {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+  background: #353535;
+}
+
+.inner-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.main-menu li {
+  margin-right: 30px;
+}
+
+.header-content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.available-rooms {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 270px);
+  grid-template-rows: repeat(3, 258px);
+  justify-content: center;
+  justify-items: center;
+}
+
+.room-card {
+  height: 150px;
+  background-color: salmon;
+  text-align: center;
+  justify-self: stretch;
+}
+
+/* .header-content {
+  margin-bottom: 30px;
+} */
+
+.content {
+  width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.btn {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  width: 99px;
+  height: 44px;
+  color: #ffffff;
+  background-color: #f9ad81;
+  border-radius: 22px;
+  border: none;
+  margin-right: 10px;
+}
+
+.btn:hover,
+.btn-big:hover {
+  background: #ffbf9a;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-big {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  width: 200px;
+  height: 44px;
+  background-color: #f9ad81;
+  border-radius: 22px;
+  border: none;
+}
+
+.main-menu li a {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-menu li a:hover {
+  color: #ff9557;
+  transition: 0.2s;
+}
+
+input {
+  width: 320px;
+  height: 44px;
+
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+input:hover,
+input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-item {
+  padding: 8px 16px;
+  margin-right: 2px;
+}
+
+.page-link {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.page-item.active {
+  background: #f9ad81;
+  border-radius: 50%;
+}
+
+.page-item:hover {
+  border-radius: 50%;
+  opacity: 0.5;
+  background: #f9ad81;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: teal;
+  text-align: center;
+}
