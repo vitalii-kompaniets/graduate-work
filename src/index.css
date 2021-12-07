@@ -56,13 +56,13 @@ li {
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 24px;
-  margin-bottom: 40px;
   background: #353535;
 }
 
 .inner-header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -75,40 +75,39 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 30px;
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
 }
 
 .main-menu li {
-  margin-right: 30px;
+  margin-right: 70px;
 }
 
-.header-content {
+.main-menu li:last-child {
+  margin-right: 0px;
+}
+
+.main-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .available-rooms {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 120px;
   grid-template-columns: repeat(3, 270px);
   grid-template-rows: repeat(3, 258px);
   justify-content: center;
   justify-items: center;
+  margin-bottom: 30px;
 }
 
 .room-card {
-  height: 150px;
   background-color: salmon;
   text-align: center;
   justify-self: stretch;
 }
-
-/* .header-content {
-  margin-bottom: 30px;
-} */
 
 .content {
   width: 1140px;
@@ -146,16 +145,15 @@ li {
   border: none;
 }
 
-.main-menu li a {
+.nav-link {
   display: inline-block;
-  margin-right: 40px;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   color: #ffffff;
 }
 
-.main-menu li a:hover {
+.nav-link:hover {
   color: #ff9557;
   transition: 0.2s;
 }
@@ -173,6 +171,12 @@ input {
 input:hover,
 input:focus {
   border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.nav-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination {
@@ -207,4 +211,13 @@ input:focus {
   padding-bottom: 40px;
   background-color: teal;
   text-align: center;
+}
+
+.room-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main-section {
+  padding-top: 60px;
 }

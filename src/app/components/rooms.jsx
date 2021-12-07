@@ -1,14 +1,13 @@
 import React from "react";
-import Footer from "./footer";
 import Pagination from "./pagination";
 import RoomCard from "./roomCard";
 
 const Rooms = () => {
   return (
     <>
-      <main className="main-section">
-        <div className="content">
-          <div className="header-content">
+      <main className="content">
+        <div className="main-section">
+          <div className="main-title">
             <h2>Доступные номера</h2>
           </div>
           <div className="available-rooms">
@@ -24,13 +23,10 @@ const Rooms = () => {
             <div className="room-card">10</div>
             <div className="room-card">11</div>
             <div className="room-card">12</div>
-            <div className="room-card">13</div>
-            <div className="room-card">14</div>
-            <Pagination />
           </div>
+          <Pagination />
         </div>
       </main>
-      <Footer />
     </>
   );
 };

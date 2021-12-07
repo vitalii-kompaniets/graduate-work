@@ -2,7 +2,7 @@ import React from "react";
 
 const Pagination = () => {
   return (
-    <nav>
+    <nav className="nav-pagination">
       <ul className="pagination">
         <li className="page-item active">
           <a className="page-link" href="/">
