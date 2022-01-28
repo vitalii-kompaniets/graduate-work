@@ -1,7 +1,9 @@
 import React from "react";
 
 const BookedRooms = () => {
-  return <h1>BookedRooms</h1>;
+  return <div className="content">
+            <h1>Booked Rooms</h1>
+          </div>;
 };
 
 export default BookedRooms;

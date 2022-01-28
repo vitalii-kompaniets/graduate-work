@@ -1,13 +1,13 @@
 import React from "react";
-import Pagination from "./pagination";
-import RoomCard from "./roomCard";
+import Pagination from "../pagination";
+import RoomCard from "../roomCard";
 
 const Rooms = () => {
   return (
     <>
       <main className="content">
-        <div className="main-section">
-          <div className="main-title">
+        <div className="room-section">
+          <div className="room-section_title">
             <h2>Доступные номера</h2>
           </div>
           <div className="available-rooms">

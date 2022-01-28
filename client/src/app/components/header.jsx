@@ -1,6 +1,6 @@
 import React from "react";
-import imgLogo from "../../img/logo1.png";
-import NavBar from "../navBar";
+import imgLogo from "../img/logo1.png";
+import NavBar from "./navBar";
 
 const Header = () => {
   return (

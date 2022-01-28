@@ -8,7 +8,9 @@ const MainPage = () => {
   };
   return (
     <>
-      <div style={bgImg}>Контент</div>
+      <div style={bgImg}>
+        <h1 className="main-title">A Luxury Stay</h1>
+      </div>
     </>
   );
 };
