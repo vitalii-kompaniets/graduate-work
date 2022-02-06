@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="content">
           <div className="footer-section">
               <div className="about">
-                  <div className="logo">
+                  <div className="footer-logo">
                       <img src={imgLogo} alt="RELAX HOTEL & SPA" />
                   </div>
                   <div className="about_description">
@@ -15,10 +15,12 @@ const Footer = () => {
                   </div>
               </div>
               <div className="subscribe-footer">
-                  <h2>Subscribe to our news</h2>
+                  <div className="footer-title">
+                    <h2>Subscribe to our news</h2>
+                  </div>
                   <div className="footer_email-input">
-                      <input type="email" name="email" placeholder="Enter your email"/>
-                      <button className="btn-subscribe" type="submit">Subscribe</button>
+                      <input className="footer-input" type="email" name="email" placeholder="Enter your email" />
+                      <button className="btn" type="submit">Subscribe</button>
                   </div>
               </div>
               <div className="contact-info">

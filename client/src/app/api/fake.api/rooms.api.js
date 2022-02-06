@@ -1,86 +1,95 @@
+import roomImg1 from "../../img/rooms/room-1.jpg";
+import roomImg2 from "../../img/rooms/room-2.jpg";
+import roomImg3 from "../../img/rooms/room-3.jpg";
+import roomImg4 from "../../img/rooms/room-4.jpg";
+
 const rooms = [
   {
     _id: "67rdca3eeb7f6fgeed471815",
-    name: "Studio",
-    image: "some img",
+    title: "Studio",
+    image: roomImg1,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed471816",
-    name: "Superior",
-    image: "some img",
+    title: "Superior",
+    image: roomImg2,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed471817",
-    name: "Double",
-    image: "some img",
+    title: "Double",
+    image: roomImg3,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed471818",
-    name: "Superior sea view",
-    image: "some img",
+    title: "Superior sea view",
+    image: roomImg4,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed471819",
-    name: "Family room",
-    image: "some img",
+    title: "Family room",
+    image: roomImg1,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed471820",
-    name: "Double sea view",
-    image: "some img",
+    title: "Double sea view",
+    image: roomImg2,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed471821",
-    name: "Standart sea view",
-    image: "some img",
+    title: "Standart sea view",
+    image: roomImg3,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed471822",
-    name: "Superior sea-side view",
-    image: "some img",
+    title: "Superior sea-side view",
+    image: roomImg4,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed471823",
-    name: "Standart sea-side view",
-    image: "some img",
+    title: "Standart sea-side view",
+    image: roomImg1,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed471824",
-    name: "Double sea-side view",
-    image: "some img",
+    title: "Double sea-side view",
+    image: roomImg2,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed47181f",
-    name: "Studio-2",
-    image: "some img",
+    title: "Studio-2",
+    image: roomImg3,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
   },
   {
     _id: "67rdca3eeb7f6fgeed47181r",
-    name: "Studio-3",
-    image: "some img",
+    title: "Studio-3",
+    image: roomImg4,
     facilities: "TV, Wi-Fi, phone, shower",
-    rate: 2.5,
+  },
+  {
+    _id: "67rdca3eeb7f6fgeed47191r",
+    title: "Studio-4",
+    image: roomImg1,
+    facilities: "TV, Wi-Fi, phone, shower",
+  },
+  {
+    _id: "67rdca3eeb7f6fgeed47171r",
+    title: "Studio-5",
+    image: roomImg2,
+    facilities: "TV, Wi-Fi, phone, shower",
   },
 ];
+
+export function fetchAll () {
+  return rooms
+}

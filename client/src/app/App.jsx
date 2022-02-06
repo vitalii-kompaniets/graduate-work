@@ -6,6 +6,7 @@ import BookedRooms from "./components/pages/bookedRooms";
 import AdminPanel from "./components/pages/adminPanel";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Login from "./ui/loginForm";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/rooms" component={Rooms} />
         <Route path="/bookedRooms" component={BookedRooms} />
         <Route path="/adminPanel" component={AdminPanel} />
+          <Route path="/login" component={Login}/>
       </Switch>
       <Footer />
     </>

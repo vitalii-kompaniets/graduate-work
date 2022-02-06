@@ -1,31 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 import Pagination from "../pagination";
 import RoomCard from "../roomCard";
+import {paginate} from "../../utils/paginate"
+import api from "../../api";
 
-const Rooms = () => {
+const Rooms = ({ ...rest }) => {
+    const [rooms] = useState(api.rooms.fetchAll())
+    const count = rooms.length
+    const pageSize = 6
+    const [currentPage, setCurrentPage] = useState(1)
+    const handlePageChange = (pageIndex) => {
+        setCurrentPage(pageIndex)
+    }
+    const roomCrop = paginate(rooms, currentPage, pageSize)
   return (
     <>
       <main className="content">
-        <div className="room-section">
-          <div className="room-section_title">
-            <h2>Доступные номера</h2>
-          </div>
-          <div className="available-rooms">
-            <RoomCard />
-            <div className="room-card">2</div>
-            <div className="room-card">3</div>
-            <div className="room-card">4</div>
-            <div className="room-card">5</div>
-            <div className="room-card">6</div>
-            <div className="room-card">7</div>
-            <div className="room-card">8</div>
-            <div className="room-card">9</div>
-            <div className="room-card">10</div>
-            <div className="room-card">11</div>
-            <div className="room-card">12</div>
-          </div>
-          <Pagination />
-        </div>
+        {count > 0 && (
+            <div className="room-section">
+              <div className="room-section_title">
+                <h2>Доступные номера</h2>
+              </div>
+              <div className="available-rooms" key={count._id}>
+                {roomCrop.map((room)=>(
+                    <RoomCard {...rest} {...room} key={room._id}/>
+                ))}
+              </div>
+          <Pagination itemsCount={count} pageSize={pageSize} onPageChange={handlePageChange} currentPage={currentPage}/>
+        </div>)}
       </main>
     </>
   );

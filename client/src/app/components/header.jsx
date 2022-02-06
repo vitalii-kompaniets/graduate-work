@@ -1,6 +1,7 @@
 import React from "react";
 import imgLogo from "../img/logo1.png";
 import NavBar from "./navBar";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,12 +11,13 @@ const Header = () => {
           <div className="logo">
             <img src={imgLogo} alt="RELAX HOTEL & SPA" />
           </div>
-          <nav className="navigation">
+          <nav>
             <NavBar />
           </nav>
           <div className="nav-right">
-            <button className="btn">Вход</button>
-            <button className="btn-big">Регистрация</button>
+            <Link className="nav-link" to="/login">
+              <button className="btn btn-big">Вход/Регистрация</button>
+            </Link>
           </div>
         </div>
       </header>

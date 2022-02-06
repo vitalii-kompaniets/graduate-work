@@ -1,14 +1,20 @@
 import React from "react";
-import roomImg from "../img/rooms/room-1.jpg";
 
-const RoomCard = () => {
+const RoomCard = ({_id, title, image, facilities}) => {
   return (
-    <div className="room-card">
-      <h1 className="room-title">Room-1</h1>
-      <div className="room-image">
-        <img src={roomImg} alt="Room-1" />
-      </div>
-    </div>
+      <>
+
+          <div className="room-card">
+              <h1 className="room-title">{title}</h1>
+              <div className="room-image">
+                  <img src={image} alt="Room"/>
+              </div>
+              <div className="room-facilities">
+                  <p>{facilities}</p>
+              </div>
+              <button className="btn btn-book-now" type="submit">Book now</button>
+          </div>
+      </>
   );
 };
 
