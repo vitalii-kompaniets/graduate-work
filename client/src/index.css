@@ -128,6 +128,23 @@ li {
   margin-bottom: 40px;
 }
 
+.container {
+  width: 600px;
+  margin: 120px auto 90px;
+  padding: 60px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
 .btn {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
@@ -147,12 +164,35 @@ li {
   transition: 0.2s;
 }
 
+.btn:disabled {
+    background: #faceb6;
+    cursor: auto;
+}
+
 .btn-big {
   width: 200px;
 }
 
 .btn-book-now {
   margin-right: 0;
+}
+
+.btn-login {
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-show-password {
+  position: absolute;
+  width: 55px;
+  height: 35px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translate(-3px, 4px);
+  border-radius: 5px;
+  background-color: #cfdcec;
+  cursor: pointer;
 }
 
 .nav-link {
@@ -169,18 +209,34 @@ li {
 }
 
 input {
+  display: block;
   width: 320px;
   height: 44px;
-
+  padding: 10px;
   background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 2px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
 }
 
-input:hover,
-input:focus {
-  border: 1px solid rgba(31, 32, 65, 0.5);
+.invalid-input_message {
+  font-size: 10px;
+  font-weight: normal;
+  margin-top: 3px;
+  color: red;
+}
+
+.invalid-input {
+  border: 2px solid #fa5353;
+}
+
+.input-group {
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .pagination {
