@@ -14,11 +14,6 @@ body {
   color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Montserrat Alternates",
-    "Courier New", monospace;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -131,30 +126,51 @@ li {
 .container {
   width: 600px;
   margin: 120px auto 90px;
-  padding: 60px;
+  padding: 35px;
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
-.form-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.login-form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.login-form a {
+  font-weight: normal;
+  color: #135bdc;
+  cursor: pointer;
+}
+
+.login-form a:hover {
+  color: #749be3;
+}
+
+.login-form_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form_text {
+  margin-top: 10px;
 }
 
 .form-input {
   margin-bottom: 15px;
 }
 
+
+
 .btn {
+  margin-right: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
-  width: 99px;
   height: 44px;
   color: #ffffff;
   background-color: #f9ad81;
   border-radius: 22px;
   border: none;
-  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -177,7 +193,7 @@ li {
   margin-right: 0;
 }
 
-.btn-login {
+.btn-login-form {
   display: block;
   margin: 0 auto;
 }
@@ -232,6 +248,10 @@ input {
 
 .input-group {
   position: relative;
+}
+
+.footer-input {
+    margin-bottom: 10px;
 }
 
 label {

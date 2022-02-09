@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, {useState, useEffect} from "react"
+import {validator} from "../utils/validator";
 import TextField from "../components/form/textField";
-import { validator } from "../utils/validator"
 
-const LoginForm = () => {
+const RegisterForm = () => {
     const [data, setData] = useState({email: "", password: ""})
     const [errors, setErrors] = useState({})
     const handleChange = ({target}) => {
@@ -52,12 +52,12 @@ const LoginForm = () => {
     }
 
     return (
-            <form onSubmit={handleSubmit}>
-                <TextField label="Электронная почта" name="email" value={data.email} onChange={handleChange} error={errors.email}/>
-                <TextField label="Пароль" type="password" name="password" value={data.password} onChange={handleChange} error={errors.password}/>
-                <button className="btn btn-login-form" disabled={!isValid}>Войти</button>
-            </form>
+        <form onSubmit={handleSubmit}>
+            <TextField label="Электронная почта" name="email" value={data.email} onChange={handleChange} error={errors.email}/>
+            <TextField label="Пароль" type="password" name="password" value={data.password} onChange={handleChange} error={errors.password}/>
+            <button className="btn btn-login-form" disabled={!isValid}>Зарегистрироваться</button>
+        </form>
     )
 }
 
-export default LoginForm
+export default RegisterForm
