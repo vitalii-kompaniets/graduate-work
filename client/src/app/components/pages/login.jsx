@@ -10,7 +10,7 @@ const Login = () => {
         setFormType(prevState => prevState === "register" ? "login" : "register")
     }
     return (
-        <div className="container">
+        <div className="form-section">
             <div className="login-form">
                 {formType === "register" ?
                     <>
