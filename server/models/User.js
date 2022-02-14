@@ -13,6 +13,7 @@ const schema = new Schema(
     password: {
       type: String,
     },
+    image: String,
     bookedRooms: [{ type: Schema.Types.ObjectId, ref: "Room" }],
   },
   {
