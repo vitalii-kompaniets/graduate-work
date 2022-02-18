@@ -126,6 +126,7 @@ input {
 }
 .room-section_title {
   text-align: center;
+  color: white;
   margin-bottom: 60px;
 }
 .available-rooms {
@@ -139,6 +140,7 @@ input {
   cursor: pointer;
 }
 .room-card {
+  background-color: #fff;
   text-align: center;
   border: 2px solid lightsteelblue;
   padding: 10px 0;
