@@ -45,8 +45,6 @@ label {
 }
 input {
   display: block;
-  width: 320px;
-  height: 44px;
   padding: 10px;
   background: #ffffff;
   border: 2px solid rgba(31, 32, 65, 0.25);
@@ -209,7 +207,9 @@ input {
   margin-top: 10px;
 }
 .form-input {
-  margin-bottom: 15px;
+  width: 320px;
+  height: 44px;
+  margin-bottom: 45px;
 }
 .invalid-input_message {
   font-size: 10px;
@@ -218,10 +218,34 @@ input {
   color: red;
 }
 .invalid-input {
+  width: 320px;
+  height: 44px;
   border: 2px solid #fa5353;
 }
 .input-group {
   position: relative;
+}
+.form-radio-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.form-check-inline {
+  display: inline-block;
+  margin-right: 25px;
+}
+.form-check-inline:last-child {
+  margin-right: 0;
+}
+.form-check-input {
+  margin: 0 auto 2px;
 }
 .footer {
   padding-top: 60px;

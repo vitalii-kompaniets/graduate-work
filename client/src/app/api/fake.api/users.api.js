@@ -1,0 +1,42 @@
+const users = [
+  {
+    _id: "67rdca3eeb7f6fgeed471915",
+    name: "Mark",
+    email: "mark@mail.hotel",
+    password: "M1234567",
+    sex: "male",
+    favouritesRooms: [],
+  },
+  {
+    _id: "67rdca3eeb7f6fgeed471916",
+    name: "Peter",
+    email: "peter@mail.hotel",
+    password: "P1234567",
+    sex: "male",
+    favouritesRooms: [],
+  },
+  {
+    _id: "67rdca3eeb7f6fgeed471917",
+    name: "John",
+    email: "john@mail.hotel",
+    password: "J1234567",
+    sex: "male",
+    favouritesRooms: [],
+  },
+  {
+    _id: "67rdca3eeb7f6fgeed471918",
+    name: "Kelly",
+    email: "kelly@mail.hotel",
+    password: "K1234567",
+    sex: "female",
+    favouritesRooms: [],
+  },
+  {
+    _id: "67rdca3eeb7f6fgeed471919",
+    name: "Sindy",
+    email: "sindy@mail.hotel",
+    password: "S1234567",
+    sex: "female",
+    favouritesRooms: [],
+  },
+];
